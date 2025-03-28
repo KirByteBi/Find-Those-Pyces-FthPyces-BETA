@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Techspawn - FthPyces</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* ---- ESTILOS PARA TECHSPAWN ---- */
+        body {
+            background-color: #0a0a1a;
+            color: #e0e0e0;
+            font-family: 'Arial', sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        /* Colores por zona */
+        .greenspawn { border-left: 4px solid #2ecc71; background: rgba(46, 204, 113, 0.08); }
+        .desierto { border-left: 4px solid #f39c12; background: rgba(243, 156, 18, 0.08); }
+        .candy-cake { border-left: 4px solid #ff9ff3; background: rgba(255, 159, 243, 0.08); }
+        .zona-retro { border-left: 4px solid #1dd1a1; background: rgba(29, 209, 161, 0.08); }
+        .beach { border-left: 4px solid #54a0ff; background: rgba(84, 160, 255, 0.08); }
+        .bluecollab { border-left: 4px solid #341f97; background: rgba(52, 31, 151, 0.08); }
+        .dream-zone { border-left: 4px solid #ff6b6b; background: rgba(255, 107, 107, 0.08); }
+        .halloween { border-left: 4px solid #e67e22; background: rgba(230, 126, 34, 0.08); }
+        .navidad { border-left: 4px solid #aec6cf; background: rgba(174, 198, 207, 0.08); }
+        .event-hub { border-left: 4px solid #27ae60; background: rgba(39, 174, 96, 0.08); }
+        .ddp { border-left: 4px solid #000; background: rgba(0, 0, 0, 0.2); }
+        .mfcons { border-left: 4px solid #9b59b6; background: rgba(155, 89, 182, 0.08); }
+        
+        /* Estructura común */
+        .zona {
+            padding: 15px;
+            margin: 25px 0;
+            border-radius: 0 8px 8px 0;
+        }
+        .zona h2 {
+            margin-top: 0;
+            color: inherit;
+        }
+        .subzona {
+            margin-left: 25px;
+        }
+        .subzona ul {
+            list-style-type: "⇨ ";
+            padding-left: 20px;
+            color: #78e08f;
+        }
+        .semi-zona {
+            margin-left: 40px;
+            opacity: 0.9;
+        }
+        .destacado {
+            background: rgba(120, 224, 143, 0.15);
+            padding: 15px;
+            border-radius: 8px;
+        }
+        .realm {
+            border: 2px dashed currentColor;
+            margin-top: 35px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Selector de idioma -->
+    <div id="language-selector">
+        <a href="techspawn-en.html">English</a> | 
+        <a href="techspawn-es.html" class="active">Español</a>
+    </div>
+
+    <h1 style="color: #00f7ff; text-align: center;">Techspawn</h1>
+    <p>El planeta de <strong>islas flotantes</strong> donde los Pyces viven, con electricidad infinita y zonas surrealistas:</p>
+
+    <!-- Zona Greenspawn -->
+    <div class="zona greenspawn">
+        <h2>🌐 Greenspawn</h2>
+        <p>Dos islas verdes que cambian de color según la época. La isla más alta tiene una <strong>cascada congelada</strong> que cae a la parte inferior y desaparece mágicamente. Contiene dos obbys:</p>
+        <ul>
+            <li><strong>Obby Azul</strong>: Plataformas tradicionales.</li>
+            <li><strong>Scarlet Obby</strong>: Plataformas rojas (¡la favorita de los Pyces!).</li>
+        </ul>
+    </div>
+
+    <!-- Zona Desierto -->
+    <div class="zona desierto">
+        <h2>🏜️ Desierto</h2>
+        <p>Un lugar contaminado con humo tóxico y una <strong>fábrica abandonada</strong> en lo alto. Para escalarla, usa las partes mecánicas y las montañas. Incluye:</p>
+        <ul>
+            <li>Torres de humo (una escalable por dentro).</li>
+            <li>Un escenario solitario.</li>
+            <li>¡Un portal a un lugar <em>atrapado entre épocas</em>!</li>
+        </ul>
+        <div class="subzona dream-zone">
+            <strong>Dream Zone:</strong> Accesible desde una cama en el portal del desierto. Zona de emociones con Pyces pixelados y pingüinos navideños. Busca a <em>Hatred Pyce</em>.
+        </div>
+    </div>
+
+    <!-- Zona Candy-Cake -->
+    <div class="zona candy-cake">
+        <h2>🍰 Candy-Cake</h2>
+        <p>Dos islas que alternan entre tres sabores:</p>
+        <ul>
+            <li><strong>Fresa</strong>: Con casas ciruela.</li>
+            <li><strong>Chocolate</strong>: Barras gigantes de cacao.</li>
+            <li><strong>Menta</strong>: Frescor gélido.</li>
+        </ul>
+        <p>En la segunda isla hay un <strong>faro tricolor</strong> (centro de orientación si te pierdes).</p>
+    </div>
+
+    <!-- Zona Retro -->
+    <div class="zona zona-retro">
+        <h2>🕹️ Zona Retro</h2>
+        <p>Pueblo clásico que revive las primeras épocas de Roblox, con:</p>
+        <ul>
+            <li>Árboles y trampolines para escalar montañas.</li>
+            <li><strong>Battlegrounds</strong>: Arena nostálgica (sin peleas... por ahora).</li>
+        </ul>
+    </div>
+
+    <!-- Semi-zona BlueCollab -->
+    <div class="zona bluecollab semi-zona">
+        <h2>🌀 BlueCollab</h2>
+        <p>Pueblo glitcheado donde fallaron las colaboraciones. Contiene:</p>
+        <ul>
+            <li>Obby con bugs aprovechables.</li>
+            <li>Tienda cerrada con código: ¡Aquí yace el <strong>origen de FthPyces</strong>!</li>
+        </ul>
+    </div>
+
+    <!-- Zona Beach -->
+    <div class="zona beach">
+        <h2>🏖️ Beach</h2>
+        <p>La única zona con una subzona <em>dentro</em> de sí misma (<strong>UnderBeach</strong>). Incluye:</p>
+        <ul>
+            <li>Paraguas azules y tumbonas.</li>
+            <li>Obby con elementos playeros.</li>
+            <li>¡Secreto hexagonal oculto!</li>
+        </ul>
+    </div>
+
+    <!-- Zonas de Evento -->
+    <div class="zona halloween">
+        <h2>🎃 Halloween</h2>
+        <p>Pyces terroríficos, almas-faro en árboles pelados y un laboratorio con el origen oculto del <strong>NOeye navideño defectuoso</strong>, cuyo nombre es <strong>Corrupted Pyce</strong>, este apareciendo en la Navidad, que fue la siguiente actualizacion.</p>
+    </div>
+
+    <div class="zona navidad">
+        <h2>🎄 Navidad</h2>
+        <p>Hogar de pingüinos exiliados de MFCons. Con:</p>
+        <ul>
+            <li>Árbol de Navidad e iglús.</li>
+            <li>Fábrica de regalos.</li>
+            <li>Cabaña con cama lila (entrada a Dream Zone).</li>
+        </ul>
+    </div>
+<!-- Justo antes de los REALMS -->
+<h1 style="color: #9b59b6; text-align: center; margin-top: 50px; border-bottom: 2px dashed #9b59b6; padding-bottom: 10px;">
+    REALMS / SATÉLITES
+</h1>
+    <!-- REALMS -->
+    <div class="zona event-hub realm">
+        <h2>🌌 Event Hub</h2>
+        <p>Bosque metálico enigmático (adaptación del original). ¡Secretos ocultos para quienes lo visiten en su versión antigua!</p>
+    </div>
+
+    <div class="zona ddp realm">
+        <h2>🏰 Digital Darkness Palace (DDP)</h2>
+        <p>Castillo invadido por NOeye. Pyces sobrevivientes fueron <strong>controlados y modificados</strong>. Descubre su bondad en la actualización navideña.</p>
+    </div>
+
+    <div class="zona mfcons realm">
+        <h2>❄️ MoltenFrost Constellation (MFC)</h2>
+        <p>Solo contiene <strong>Snowy Froz</strong>:</p>
+        <ul>
+            <li>Bosque y torres heladas (con cabaña en la cima).</li>
+            <li>Torre de reloj escalable (¡eventos extraños aquí!).</li>
+            <li>Hogar de <em>Accient Pyce's Soul (APsS)</em>, controlado por NOeye.</li>
+        </ul>
+    </div>
+
+    <!-- Nota sobre NOeye -->
+    <div class="destacado">
+        <p>⚠️ <strong style="color: #000; background-color: #78e08f; padding: 2px 5px; border-radius: 3px;">NOeye</strong>, el ser de Materia Negra con entre 3 y 4 años de historia, altera la realidad. <em>"No es malo... pero su influencia es inevitable."</em></p>
+    </div>
+
+    <!-- Navegación -->
+    <div style="text-align: center; margin-top: 40px;">
+        <a href="Find Those Pyces-es.html" style="color: #00f7ff;">Inicio</a> | 
+        <a href="que-es-un-pyce.html" style="color: #00f7ff;">¿Qué es un Pyce?</a> | 
+        <a href="noeye-es.html" style="color: #ff6b6b;">NOeye (Próximamente)</a>
+    </div>
+</body>
+</html>

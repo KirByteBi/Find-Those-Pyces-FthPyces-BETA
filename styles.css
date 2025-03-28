@@ -1,0 +1,166 @@
+h1 {
+    color: rgb(78, 160, 253);
+    height: fit-content;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+p {
+    color: rgb(1, 245, 253);
+    text-align: center;
+}
+
+h2 {
+    color: rgb(0, 255, 0);
+    height: fit-content;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.Pyce4 {
+    width: 300px;  /* Ancho fijo */
+    height: auto;  /* Mantiene la proporción de la imagen */
+}
+
+h1, h2 {
+    text-align: center; /* Centra el texto horizontalmente */
+}
+
+h3 {
+    color: red;
+    height: auto;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Aquí aplicamos el fondo en el body */
+body {
+    background-image: url("FONDO.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+/* Contenedor del índice */
+.index-links {
+    margin-top: 40px;       /* Espacio superior */
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.1);  /* Fondo sutil */
+    border-radius: 8px;
+    text-align: center;
+}
+
+.index-links a {
+    color: red;             /* Enlaces rojos */
+    font-weight: bold;
+    text-decoration: none;
+    margin: 0 8px;
+}
+
+.index-links a:hover {
+    text-decoration: underline;
+}
+ul li {
+        color: #00ff6a; /* Verde oscuro legible */
+    }
+/* ===== ESTILOS ESPECÍFICOS PARA TECHSPAWN ===== */
+/* Contenedor principal */
+.techspawn-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Zonas y subzonas */
+.zona-techspawn {
+    background: rgba(0, 247, 255, 0.05);
+    border-left: 3px solid #00f7ff;
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 0 8px 8px 0;
+}
+
+.subzona-techspawn {
+    margin-left: 25px;
+    color: #78e08f;
+}
+
+.subzona-techspawn ul {
+    list-style-type: "⇨ ";
+    padding-left: 20px;
+}
+
+/* Estilo para NOeye */
+.materia-negra {
+    background-color: #000;
+    color: #78e08f;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-family: 'Courier New', monospace;
+}
+
+/* Efecto hover para zonas */
+.zona-techspawn:hover {
+    background: rgba(0, 247, 255, 0.1);
+    transition: background 0.3s;
+}
+/* ---- ESTILOS REALMS (Dificultades de Evento) ---- */
+.realm {
+    border: 2px dashed currentColor;
+    margin-top: 25px;
+    background: rgba(0, 0, 0, 0.1) !important;
+}
+
+.realm h2 {
+    color: inherit;
+    font-size: 1.3em;
+}
+
+/* Colores por tipo de evento */
+.event-award { border-color: #27ae60; color: #27ae60; }
+.exclusive { border-color: #8e44ad; color: #8e44ad; }
+.special { border-color: #f7dc6f; color: #f7dc6f; }
+/* ---- ESTILOS PARA EL SELECTOR DE IDIOMA ---- */
+#language-selector {
+    text-align: center;
+    margin: 20px 0;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.2); /* Fondo oscuro para contraste */
+    border-radius: 8px;
+}
+
+#language-selector a {
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+/* Enlace INGLÉS (rojo o azul) */
+#language-selector a[href*="-en.html"] {
+    color: #ff6b6b; /* Rojo */
+    /* O usa azul: color: #54a0ff; */
+}
+
+/* Enlace ESPAÑOL (amarillo) */
+#language-selector a[href*="-es.html"] {
+    color: #f1c40f; /* Amarillo */
+}
+
+/* Estilo al pasar el mouse */
+#language-selector a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    text-shadow: 0 0 5px currentColor;
+}
+
+/* Enlace activo (página actual) */
+#language-selector a.active {
+    border-bottom: 2px solid currentColor;
+}
+/* Añade esto a tu styles.css */
+.Pyce4 {
+    display: block;          /* Convertir en bloque para margin-auto */
+    margin: 0 auto;         /* Centrado horizontal */
+    max-width: 300px;       /* Ajusta el tamaño (opcional) */
+    height: auto;           /* Mantiene proporción */
+    border: 2px solid #00f7ff; /* Borde azul neón (opcional) */
+    border-radius: 8px;     /* Esquinas redondeadas */
+}
